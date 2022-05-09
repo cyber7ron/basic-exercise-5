@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="checkBtn">
+        <label for="checkBtn">
+            <i class="fa-solid fa-bars" id="ham"></i>
+        </label>
+        <div class="menu" id="menu">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+        </div>
+        <span class="navLink">Contact Manager</span>
+        <a class="navLink homeLink closeLink" href="#">Home</a>
+        <a class="navLink closeLink" href="#">About Us</a>
+        <a class="navLink closeLink" href="#">Help</a>
+    </nav>
+    <main>
+        <div class="leftContainer">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Name">
+                <label for="gender">Gender</label>
+                <select name="gender">
+                    <option value="" disabled selected>--Select Gender--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email">
+                <label for="phone">Phone</label>
+                <input type="number" name="phone" placeholder="Phone">
+                <button>Add Contact</button>
+            </form>
+        </div>
+        <div class="rightContainer">
+            <h2>Contacts (Cards View)</h2>
+            <span>Hover the mouse on card to see details</span>
+            <div class="cards">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/avatar2.png">
+                        <div class="name"><span>Peter Parker</span></div>
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>Peter Parker</h3> 
+                        <p>peter@gmail.com</p> 
+                        <p>+91-1234567890</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/avatar1.png">
+                        <div class="name"><span>James Cameron</span></div>
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>James Cameron</h3> 
+                        <p>james@gmail.com</p> 
+                        <p>+91-1234567890</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/avatar3.png">
+                        <div class="name"><span>Maria Hill</span></div>
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>Maria Hill</h3> 
+                        <p>maria@gmail.com</p> 
+                        <p>+91-1234567890</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="images/avatar1.png">
+                        <div class="name"><span>John Parry</span></div>
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>John Parry</h3> 
+                        <p>john@gmail.com</p> 
+                        <p>+91-1234567890</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="table">
+        <h2 id="button">Contacts (Table View)</h2>
+        <table>
+            <tr>
+                <th>&nbsp;</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+            <tr>
+                <td><img src="images/avatar2.png" alt=""></td>
+                <td>Peter Parker</td>
+                <td>peter@gmail.com</td>
+                <td>547-165-3466</td>
+            </tr>
+            <tr>
+                <td><img src="images/avatar1.png" alt=""></td>
+                <td>James Cameron</td>
+                <td>james@gmail.com</td>
+                <td>234-456-6790</td>
+            </tr>
+            <tr>
+                <td><img src="images/avatar3.png" alt=""></td>
+                <td>Maria Hill</td>
+                <td>maria@gmail.com</td>
+                <td>344-124-3578</td>
+            </tr>
+            <tr>
+                <td><img src="images/avatar1.png" alt=""></td>
+                <td>John Parry</td>
+                <td>john@gmail.com</td>
+                <td>289-194-6789</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <h4>Copyright ContactManager @ 2020</h4>
+        <div>
+            <div><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore praesentium eum, nemo iusto quo expedita aut eos incidunt ipsam? Debitis facilis nulla quidem, eveniet corporis mollitia libero excepturi recusandae nam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore praesentium eum, nemo iusto quo expedita aut eos incidunt ipsam?
+            </p></div>
+            <div><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nam magni. Accusamus quos error laboriosam. Consequuntur nemo quia labore, quaerat, quis, sit voluptate mollitia tempore nihil facere incidunt iusto ea?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore praesentium eum, nemo iusto quo expedita aut eos incidunt ipsam?
+            </p></div>
+            <div><p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque neque voluptatibus autem sed recusandae magni ipsum, aspernatur numquam, et quasi fugiat nisi inventore. Obcaecati culpa temporibus, ex minus impedit sed!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore praesentium eum, nemo iusto quo expedita aut eos incidunt ipsam?
+            </p></div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,256 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    height: 6vh;
+    width: 100%;
+    background-color: #0d70e1;
+    display: flex;
+    align-items: center;
+}
+nav>a{
+    text-decoration: none;
+}
+.navLink{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10.5px;
+    font-weight: 550;
+}
+.homeLink{
+    background-color: rgb(255, 37, 37);
+}
+nav>a:hover{
+    background-color: rgb(94, 94, 94);
+}
+
+main{
+    height: 45vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    background-color: #F2F1F2;
+    border-radius: 5px;
+}
+form>input{
+    padding: 4px;
+    margin: 5px;
+    outline: none;
+    border: .1px solid gray;
+}
+form>select{
+    padding: 5px;
+    margin: 5px;
+    border: .1px solid gray;
+}
+form>button{
+    background-color: #4caf50;
+    color: white;
+    width: 99%;
+    height: 4vh;
+    border: none;
+    position: relative;
+    left: 3px;
+}
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.rightContainer img{
+    width: 151px;
+}
+.rightContainer>span{
+    margin: 15px 0px;
+}
+.cards{
+    display: flex;
+}
+.name{
+    position: relative;
+    width: 100%;
+    bottom: 36px;
+    text-align: center;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+.flip-card {
+    background-color: transparent;
+    width: 151px;
+    height: 151px;
+    margin: 0px 7px;
+}
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+} 
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+.cards h3{
+    margin-top: 40px;
+}
+
+.table{
+    height: 44vh;
+}
+table img{
+    width: 13%;
+    border-radius: 50%;
+}
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+th{
+    text-align: start;
+    padding-left: 5px;
+}
+td{
+    width: 20%;
+    height: 50px;
+    padding-left: 5px;
+}
+.table h2{
+    margin: 10px 5px 10px 5px;
+}
+table,td,th{
+    border-bottom: 1px solid gray;
+    border-collapse: collapse;
+}
+
+footer{
+    height: 10rem;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-size: .9rem;
+}
+footer>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+h4{
+    text-align: center;
+    padding: 10px;
+}
+footer p{
+    padding: 5px;
+    text-align: justify;
+}
+button:hover{
+    background-color: green;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-radius: 3px;
+    z-index: 2;
+    position: absolute;
+    top: 32px;
+    left: -400px;
+    background-color: white;
+    box-shadow: 0px 0px 200px 0px rgb(59, 59, 59);
+}
+.menu a{
+    text-decoration: none;
+    padding: 5px 5px;
+    font-size: 15pt;
+    color: black;
+}
+.menu a:hover{
+    background-color: gainsboro;
+}
+
+nav i{
+    color: white;
+    margin-left: 10px;
+    visibility: hidden;
+}
+tr:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+nav>input{
+    display: none;
+}
+@media screen and (max-width: 550px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 1100px;
+    }
+    .closeLink{
+        display: none;
+    }
+    nav i{
+        visibility: visible;
+    }
+
+    .leftContainer{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .cards{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flip-card{
+        margin: 10px 0px;
+    }
+    .rightContainer h2, .rightContainer span{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    table img{
+        width: 30%;
+    }
+    .table h2{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    footer{
+        height: 450px;
+        color: white;
+    }
+}
+
+#checkBtn:checked ~ .menu{
+    left: 10px;
+}
